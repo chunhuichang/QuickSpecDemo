@@ -1,0 +1,23 @@
+.DS_Store
+.localized
+# Build directory
+
+# XCode user specific files
+xcuserdata/
+*.xcworkspace/
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.pbxuser
+Export/
+fastlane/report.xml
+fastlane/README.md
+
+
+Carthage/
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+Carthage/Checkouts
+Carthage/Build
