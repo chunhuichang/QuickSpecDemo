@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,14 +13,12 @@
 		1DE0AC8C2491FCA700EE052A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0AC8A2491FCA700EE052A /* Main.storyboard */; };
 		1DE0AC8E2491FCA800EE052A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0AC8D2491FCA800EE052A /* Assets.xcassets */; };
 		1DE0AC912491FCA800EE052A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0AC8F2491FCA800EE052A /* LaunchScreen.storyboard */; };
-		1DE0ACC62492005B00EE052A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE0ACC42492005A00EE052A /* Nimble.framework */; };
-		1DE0ACC72492005B00EE052A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE0ACC52492005B00EE052A /* Quick.framework */; };
-		1DE0ACC82492006A00EE052A /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1DE0ACC42492005A00EE052A /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1DE0ACC92492006A00EE052A /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1DE0ACC52492005B00EE052A /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1DE0ACCC249200D800EE052A /* AnotherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE0ACCA249200D800EE052A /* AnotherTests.swift */; };
 		1DE0ACCD249200D800EE052A /* SomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE0ACCB249200D800EE052A /* SomeTests.swift */; };
 		1DE0ACD0249200DF00EE052A /* SomeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE0ACCF249200DF00EE052A /* SomeSpec.swift */; };
 		1DE0ACD1249200DF00EE052A /* AnotherSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE0ACCE249200DF00EE052A /* AnotherSpec.swift */; };
+		E16813FB27FEE83700F6566D /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = E16813FA27FEE83700F6566D /* Nimble */; };
+		E16813FD27FEE83700F6566D /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = E16813FC27FEE83700F6566D /* Quick */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +45,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1DE0ACC82492006A00EE052A /* Nimble.framework in CopyFiles */,
-				1DE0ACC92492006A00EE052A /* Quick.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,8 +63,6 @@
 		1DE0ACA02491FCC400EE052A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DE0ACAA2491FCD000EE052A /* QuickSpecDemoQuickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickSpecDemoQuickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE0ACAE2491FCD000EE052A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1DE0ACC42492005A00EE052A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		1DE0ACC52492005B00EE052A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		1DE0ACCA249200D800EE052A /* AnotherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherTests.swift; sourceTree = "<group>"; };
 		1DE0ACCB249200D800EE052A /* SomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeTests.swift; sourceTree = "<group>"; };
 		1DE0ACCE249200DF00EE052A /* AnotherSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherSpec.swift; sourceTree = "<group>"; };
@@ -94,8 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DE0ACC62492005B00EE052A /* Nimble.framework in Frameworks */,
-				1DE0ACC72492005B00EE052A /* Quick.framework in Frameworks */,
+				E16813FD27FEE83700F6566D /* Quick in Frameworks */,
+				E16813FB27FEE83700F6566D /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +103,6 @@
 				1DE0AC9D2491FCC400EE052A /* QuickSpecDemoUnitTests */,
 				1DE0ACAB2491FCD000EE052A /* QuickSpecDemoQuickTests */,
 				1DE0AC822491FCA700EE052A /* Products */,
-				1DE0ACB42491FE7A00EE052A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,15 +150,6 @@
 			path = QuickSpecDemoQuickTests;
 			sourceTree = "<group>";
 		};
-		1DE0ACB42491FE7A00EE052A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1DE0ACC42492005A00EE052A /* Nimble.framework */,
-				1DE0ACC52492005B00EE052A /* Quick.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,6 +166,8 @@
 			dependencies = (
 			);
 			name = QuickSpecDemo;
+			packageProductDependencies = (
+			);
 			productName = QuickSpecDemo;
 			productReference = 1DE0AC812491FCA700EE052A /* QuickSpecDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -200,6 +186,8 @@
 				1DE0ACA22491FCC400EE052A /* PBXTargetDependency */,
 			);
 			name = QuickSpecDemoUnitTests;
+			packageProductDependencies = (
+			);
 			productName = QuickSpecDemoUnitTests;
 			productReference = 1DE0AC9C2491FCC400EE052A /* QuickSpecDemoUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -219,6 +207,10 @@
 				1DE0ACB02491FCD000EE052A /* PBXTargetDependency */,
 			);
 			name = QuickSpecDemoQuickTests;
+			packageProductDependencies = (
+				E16813FA27FEE83700F6566D /* Nimble */,
+				E16813FC27FEE83700F6566D /* Quick */,
+			);
 			productName = QuickSpecDemoQuickTests;
 			productReference = 1DE0ACAA2491FCD000EE052A /* QuickSpecDemoQuickTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -255,6 +247,10 @@
 				Base,
 			);
 			mainGroup = 1DE0AC782491FCA700EE052A;
+			packageReferences = (
+				E16813F027FEE75500F6566D /* XCRemoteSwiftPackageReference "Nimble" */,
+				E16813F327FEE79500F6566D /* XCRemoteSwiftPackageReference "Quick" */,
+			);
 			productRefGroup = 1DE0AC822491FCA700EE052A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -548,10 +544,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = QuickSpecDemoQuickTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -571,10 +564,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = QuickSpecDemoQuickTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -629,6 +619,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E16813F027FEE75500F6566D /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		E16813F327FEE79500F6566D /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E16813FA27FEE83700F6566D /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E16813F027FEE75500F6566D /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		E16813FC27FEE83700F6566D /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E16813F327FEE79500F6566D /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1DE0AC792491FCA700EE052A /* Project object */;
 }
